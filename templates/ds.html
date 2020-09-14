@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('   {{ url_for('static', filename = 'img/home-bg.jpg' ) }}      ')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>ডাটা স্ট্রকচার</h1>
+            <span class="subheading">A Blog by অলস প্রোগ্রামার </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container" style="width: 733px; height: 300px; padding: 12px;" >
+         <a class="btn btn-primary" href="/array" role="button" style="margin: 12px;">Array</a>
+         <a class="btn btn-primary" href="/Linked-list" role="button" style="margin: 12px;">Linked List</a>
+         <a class="btn btn-primary" href="/Stack" role="button" style="margin: 12px;">Stack</a>
+         <a class="btn btn-primary" href="/Queue" role="button" style="margin: 12px;">Queue</a>
+         <a class="btn btn-primary" href="/String" role="button" style="margin: 12px;">String</a>
+         <a class="btn btn-primary" href="/Heap" role="button" style="margin: 12px;">Heap</a>
+         <a class="btn btn-primary" href="/Hash" role="button" style="margin: 12px;">Hash</a>
+         <a class="btn btn-primary" href="/Tree" role="button" style="margin: 12px;">Tree</a>
+         <a class="btn btn-primary" href="/Graph" role="button" style="margin: 12px;">Graph</a>
+         <a class="btn btn-primary" href="/Trie" role="button" style="margin: 12px;">Trie</a>
+         <a class="btn btn-primary" href="/Segment-tree" role="button" style="margin: 12px;">Segment Tree</a>
+
+
+
+              
+  </div>
+
+   {% endblock %}
+  

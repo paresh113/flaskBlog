@@ -1,0 +1,21 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql+pymysql://root:@localhost/fishbari",
+    "prod_uri": "mysql+pymysql://root:@localhost/fishbari",
+    "fb_uri": "https://web.facebook.com/aurko.das.5",
+    "Git_uri":"github.com/paresh113",
+
+    "blog_name": "fisher bazaer",
+    "gmail-user": "paresh53710@gmail.com",
+    "gmail-pass": "babamaa3078",
+    "no_of_post": 2,
+    "login_img": "login.svg",
+    "admin_user": "paresh",
+    "admin_pass": "space",
+    "file_location": "F:\\flaskProject\\static"
+
+  }
+
+}

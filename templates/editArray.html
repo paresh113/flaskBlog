@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('    {{ url_for('static', filename = 'img/about-bg.jpg' ) }}   ')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Admin Panl</h1>
+            <span class="subheading">This is what I do.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h1>Add/Edit post</h1>
+                 
+      <a href="/dashboard"><button class = 'btn btn-primary'> dashboard home </button> </a>
+      <a href="/logout"><button class = 'btn btn-primary'> logout </button> </a>
+
+      <hr>
+
+       <form name="sentMessage" id="contactForm" action ="/edit/array/{{sno}}" method = "POST" novalidate>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>title</label>
+              <input type="text" class="form-control" placeholder="title" id="title"  name = "title" required data-validation-required-message="Please enter your email address."value = "{{ post.title }}" >
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>slug</label>
+              <input type="text" class="form-control" placeholder="slug" id="slug" name = "slug" required data-validation-required-message="Please enter your phone number." value = "{{ post.slug }}">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+           <div class="control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>content</label>
+              <input type="text" class="form-control" placeholder="content" id="content" name = "content" required data-validation-required-message="Please enter your phone number." value = "{{ post.content }}">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>image_file</label>
+              <input class="form-control" placeholder="image_file" id="image_file" name = "img_file" value = "{{ post.img_file }}">
+              <p class="help-block text-danger" ></p>
+            </div>
+          </div>
+          <br>
+          <div id="success"></div>
+          <button type="submit" class="btn btn-primary" id="sendMessageButton">submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+
+{% endblock %}
