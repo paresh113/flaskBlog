@@ -1,6 +1,6 @@
 # A programing blog
 
-Here I have created this blog for the pourpose of helping programmers to learn Datastructure and Algorithm in bangla.
+Here I have created this blog for the pourpose of helping programmers to learn Datastructure and Algorithm in bengali.
 
 ## Functionalities that will be performed by only admin
 
